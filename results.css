@@ -1,0 +1,155 @@
+@font-face {
+    font-family: SF;
+    src: url(FontsFree-Net-SFProText-Regular-1.ttf);
+    font-weight: bold;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(back-img.png);
+}
+
+.heading {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brief {
+    font-family: SF;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.back {
+    background-color: #191919cc;
+    border-radius: 20px;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 160px;
+    padding: 3%;
+}
+
+i {
+    color: gray;
+    font-size: 22px;
+    padding: 12px;
+}
+
+.cancel {
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
+    cursor: pointer;
+    font-family: SF;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 34%;
+    margin-left: 33%;
+}
+
+.search-btn:hover {
+    background-color: transparent;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+}
+
+.input {
+    padding: 10.5px;
+    border: 1px solid white;
+    width: 30%;
+    font-family: SF;
+    font-size: 19px;
+    border-radius: 0 10px 10px 0;
+    text-transform: uppercase;
+}
+
+input::selection {
+    background-color: dodgerblue;
+    color:white;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.container{
+    padding: 20px;
+    margin: 2%;
+    justify-content: center;
+    color: rgb(23, 233, 23);
+    font-size: 20px;
+    font-family: SF;
+}
+
+.output-container {
+    background-color: transparent;
+    width: 80%;
+    margin: auto;
+}
+
+.nfound,.invalid {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    font-family: SF;
+    font-size: 20px;
+}
+.found_1 {
+    color: rgb(240, 116, 34);
+    text-align: center;
+    padding: 20px;
+    font-family: SF;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .brief {
+      font-size: 20px;
+    }
+  }    
+
+@media (max-width: 576px) {
+      .heading img {
+          width: 60%;
+      }
+      .search-btn {
+          font-size: 15px;
+          width: 50%;
+          margin-left: 25%;
+      }
+      .input {
+          width: 50%;
+          font-size: 17px;
+          padding: 12px;
+      }
+  }
